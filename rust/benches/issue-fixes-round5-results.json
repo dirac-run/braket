@@ -1,0 +1,287 @@
+{
+  "implementation": "rust",
+  "date": "2026-11-12T18:24:24.832099+00:00",
+  "dataSha256": "97e0acbccfcf1400ce77e8755c24f2dad48c6a7abd2f981b12b91ef48a4df8ae",
+  "dataBytes": 1198040,
+  "dataGrowthBytes": 506,
+  "method": "Same-host before/after public endpoint measurements, seven samples of 20,000 calls per workload. Existing frozen workloads; includes normal host noise, not a universal performance guarantee. Timing excludes startup.",
+  "before": {
+    "endpoint": "Rust public unbash_classifier::classify(&str)",
+    "samples": 7,
+    "iterationsPerSample": 20000,
+    "steadyState": {
+      "known": {
+        "inputs": 50,
+        "knownDecisionInputs": 50,
+        "positiveDecisionInputs": 42,
+        "zeroEffectInputs": 8,
+        "unknownDecisionInputs": 0,
+        "averageInputCharacters": 17.02,
+        "iterationsPerSample": 20000,
+        "nsPerCall": {
+          "min": 462.96175,
+          "median": 464.6787,
+          "p90": 475.81645,
+          "max": 499.638
+        },
+        "samplesNsPerCall": [
+          475.81645,
+          499.638,
+          474.7134,
+          464.4972,
+          462.96175,
+          464.6787,
+          464.2007
+        ]
+      },
+      "unknown": {
+        "inputs": 26,
+        "knownDecisionInputs": 0,
+        "positiveDecisionInputs": 0,
+        "zeroEffectInputs": 0,
+        "unknownDecisionInputs": 26,
+        "averageInputCharacters": 15.73076923076923,
+        "iterationsPerSample": 20000,
+        "nsPerCall": {
+          "min": 395.68875,
+          "median": 396.74685,
+          "p90": 397.3703,
+          "max": 398.1853
+        },
+        "samplesNsPerCall": [
+          396.74685,
+          396.8423,
+          397.3703,
+          395.68875,
+          395.93235,
+          398.1853,
+          396.27625
+        ]
+      },
+      "compound": {
+        "inputs": 4,
+        "knownDecisionInputs": 4,
+        "positiveDecisionInputs": 4,
+        "zeroEffectInputs": 0,
+        "unknownDecisionInputs": 0,
+        "averageInputCharacters": 114.5,
+        "iterationsPerSample": 20000,
+        "nsPerCall": {
+          "min": 2546.4478,
+          "median": 2571.32335,
+          "p90": 2575.6249,
+          "max": 2581.119
+        },
+        "samplesNsPerCall": [
+          2574.44335,
+          2570.74825,
+          2581.119,
+          2546.4478,
+          2563.36715,
+          2575.6249,
+          2571.32335
+        ]
+      },
+      "long": {
+        "inputs": 4,
+        "knownDecisionInputs": 3,
+        "positiveDecisionInputs": 1,
+        "zeroEffectInputs": 2,
+        "unknownDecisionInputs": 1,
+        "averageInputCharacters": 17926.5,
+        "iterationsPerSample": 20000,
+        "nsPerCall": {
+          "min": 12235.31355,
+          "median": 12427.19205,
+          "p90": 12614.501,
+          "max": 12653.2358
+        },
+        "samplesNsPerCall": [
+          12653.2358,
+          12614.501,
+          12427.19205,
+          12250.5919,
+          12332.39555,
+          12235.31355,
+          12556.8833
+        ]
+      }
+    },
+    "checksum": -1728219644
+  },
+  "after": {
+    "endpoint": "Rust public unbash_classifier::classify(&str)",
+    "samples": 7,
+    "iterationsPerSample": 20000,
+    "steadyState": {
+      "known": {
+        "inputs": 50,
+        "knownDecisionInputs": 50,
+        "positiveDecisionInputs": 42,
+        "zeroEffectInputs": 8,
+        "unknownDecisionInputs": 0,
+        "averageInputCharacters": 17.02,
+        "iterationsPerSample": 20000,
+        "nsPerCall": {
+          "min": 470.5208,
+          "median": 471.36035,
+          "p90": 472.07185,
+          "max": 483.605
+        },
+        "samplesNsPerCall": [
+          471.36035,
+          470.6863,
+          483.605,
+          470.78735,
+          470.5208,
+          471.62725,
+          472.07185
+        ]
+      },
+      "unknown": {
+        "inputs": 26,
+        "knownDecisionInputs": 0,
+        "positiveDecisionInputs": 0,
+        "zeroEffectInputs": 0,
+        "unknownDecisionInputs": 26,
+        "averageInputCharacters": 15.73076923076923,
+        "iterationsPerSample": 20000,
+        "nsPerCall": {
+          "min": 403.76295,
+          "median": 405.5669,
+          "p90": 407.6485,
+          "max": 409.89655
+        },
+        "samplesNsPerCall": [
+          404.3399,
+          405.5669,
+          407.6485,
+          409.89655,
+          407.1274,
+          403.76295,
+          404.1559
+        ]
+      },
+      "compound": {
+        "inputs": 4,
+        "knownDecisionInputs": 4,
+        "positiveDecisionInputs": 4,
+        "zeroEffectInputs": 0,
+        "unknownDecisionInputs": 0,
+        "averageInputCharacters": 114.5,
+        "iterationsPerSample": 20000,
+        "nsPerCall": {
+          "min": 2434.90015,
+          "median": 2462.2257,
+          "p90": 2467.84235,
+          "max": 2516.0943
+        },
+        "samplesNsPerCall": [
+          2516.0943,
+          2466.7353,
+          2467.84235,
+          2462.2257,
+          2455.64505,
+          2442.99275,
+          2434.90015
+        ]
+      },
+      "long": {
+        "inputs": 4,
+        "knownDecisionInputs": 3,
+        "positiveDecisionInputs": 1,
+        "zeroEffectInputs": 2,
+        "unknownDecisionInputs": 1,
+        "averageInputCharacters": 17926.5,
+        "iterationsPerSample": 20000,
+        "nsPerCall": {
+          "min": 12821.72705,
+          "median": 12862.19995,
+          "p90": 12882.12535,
+          "max": 12897.66115
+        },
+        "samplesNsPerCall": [
+          12862.19995,
+          12882.12535,
+          12864.26295,
+          12853.6163,
+          12821.72705,
+          12835.6409,
+          12897.66115
+        ]
+      }
+    },
+    "checksum": -1728219644
+  },
+  "medianChangePercent": {
+    "known": 1.438,
+    "unknown": 2.223,
+    "compound": -4.243,
+    "long": 3.5
+  },
+  "validation": {
+    "typescriptTests": 201,
+    "rustUnitTests": 14,
+    "rustParityAndStateTests": 6,
+    "rustIndependentSemanticTests": 4,
+    "rustDebugAndReleasePassed": true,
+    "parityInputs": 36715,
+    "parityMismatches": 0,
+    "reportedExamples": 16,
+    "correctedKnownExamples": 13,
+    "explicitUnknownExamples": 3,
+    "deterministicDataRebuildPassed": true,
+    "idempotentFixtureGenerationPassed": true,
+    "standalonePackageSmokePassed": true,
+    "independentBlackBoxReview": {
+      "inputs": 218,
+      "known": 101,
+      "unknown": 117,
+      "typescriptRustDifferences": 0,
+      "confirmedHighValueUnderclassifications": 0,
+      "scope": "Two independent reviewers using public endpoints only; unknown results are support boundaries, not proof of correctness. No payload commands executed."
+    }
+  },
+  "warmedAllocationProbe": {
+    "method": "Separate process counting successful System allocator calls and requested sizes; fixture construction, stdout initialization and 5000 warmup calls per workload excluded. Live and peak bytes count allocator-requested bytes, not RSS or allocator bookkeeping.",
+    "workloads": {
+      "known": {
+        "calls": 20000,
+        "allocations": 0,
+        "reallocations": 0,
+        "deallocations": 0,
+        "requestedBytes": 0,
+        "retainedBytesDelta": 0,
+        "peakLiveBytesAboveBaseline": 0
+      },
+      "unknown": {
+        "calls": 20000,
+        "allocations": 0,
+        "reallocations": 0,
+        "deallocations": 0,
+        "requestedBytes": 0,
+        "retainedBytesDelta": 0,
+        "peakLiveBytesAboveBaseline": 0
+      },
+      "compound": {
+        "calls": 20000,
+        "allocations": 0,
+        "reallocations": 0,
+        "deallocations": 0,
+        "requestedBytes": 0,
+        "retainedBytesDelta": 0,
+        "peakLiveBytesAboveBaseline": 0
+      },
+      "long": {
+        "calls": 20000,
+        "allocations": 0,
+        "reallocations": 0,
+        "deallocations": 0,
+        "requestedBytes": 0,
+        "retainedBytesDelta": 0,
+        "peakLiveBytesAboveBaseline": 0
+      }
+    },
+    "checksum": -1334685148
+  }
+}

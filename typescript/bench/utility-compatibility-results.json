@@ -1,0 +1,258 @@
+{
+  "endpoint": ".build/src/index.js (compiled public source entry point)",
+  "node": "v24.11.0",
+  "platform": "linux",
+  "architecture": "x64",
+  "date": "2026-11-12T22:26:11.485Z",
+  "samples": 7,
+  "checksum": 2124438473,
+  "correctness": {
+    "total": 76,
+    "passed": 76,
+    "mismatches": [],
+    "grammarProbes": [
+      {
+        "source": "curl --output=result https://example.invalid",
+        "expected": 50331663,
+        "basis": "long equals syntax not documented by frozen curl version; non-normative probe",
+        "actual": -1
+      }
+    ]
+  },
+  "steadyState": {
+    "known": {
+      "inputs": 50,
+      "knownDecisionInputs": 50,
+      "positiveDecisionInputs": 42,
+      "zeroEffectInputs": 8,
+      "unknownDecisionInputs": 0,
+      "averageInputCharacters": 17.02,
+      "iterationsPerSample": 20000,
+      "nsPerCall": {
+        "min": 1689.533450000002,
+        "median": 1791.046,
+        "p90": 1793.1546499999997,
+        "max": 2127.0895000000005
+      },
+      "samplesNsPerCall": [
+        2127.0895000000005,
+        1791.046,
+        1792.409649999999,
+        1793.1546499999997,
+        1689.533450000002,
+        1754.2962999999986,
+        1724.11075
+      ]
+    },
+    "unknown": {
+      "inputs": 26,
+      "knownDecisionInputs": 0,
+      "positiveDecisionInputs": 0,
+      "zeroEffectInputs": 0,
+      "unknownDecisionInputs": 26,
+      "averageInputCharacters": 15.73076923076923,
+      "iterationsPerSample": 20000,
+      "nsPerCall": {
+        "min": 1504.0246500000023,
+        "median": 1545.7990000000025,
+        "p90": 1580.5767500000002,
+        "max": 1710.441500000002
+      },
+      "samplesNsPerCall": [
+        1710.441500000002,
+        1580.5767500000002,
+        1560.7434499999983,
+        1545.7990000000025,
+        1537.127849999999,
+        1510.4959000000008,
+        1504.0246500000023
+      ]
+    },
+    "compound": {
+      "inputs": 4,
+      "knownDecisionInputs": 4,
+      "positiveDecisionInputs": 4,
+      "zeroEffectInputs": 0,
+      "unknownDecisionInputs": 0,
+      "averageInputCharacters": 114.5,
+      "iterationsPerSample": 20000,
+      "nsPerCall": {
+        "min": 11764.530249999996,
+        "median": 11841.979400000004,
+        "p90": 12030.523749999997,
+        "max": 12034.07485
+      },
+      "samplesNsPerCall": [
+        12034.07485,
+        11917.717349999999,
+        12030.523749999997,
+        11811.7612,
+        11841.979400000004,
+        11764.530249999996,
+        11771.025450000001
+      ]
+    },
+    "long": {
+      "inputs": 4,
+      "knownDecisionInputs": 3,
+      "positiveDecisionInputs": 1,
+      "zeroEffectInputs": 2,
+      "unknownDecisionInputs": 1,
+      "averageInputCharacters": 17926.5,
+      "iterationsPerSample": 20000,
+      "nsPerCall": {
+        "min": 135154.25435,
+        "median": 136215.7593,
+        "p90": 136272.53985000006,
+        "max": 136377.77860000005
+      },
+      "samplesNsPerCall": [
+        135154.25435,
+        135312.16720000003,
+        135665.74289999998,
+        136272.53985000006,
+        136377.77860000005,
+        136215.7593,
+        136237.87525000007
+      ]
+    }
+  },
+  "coldLoad": {
+    "method": "Fresh Node child, explicit GC before import and after first call. Timing excludes process spawn; module import and data initialization are included.",
+    "summary": {
+      "importMs": {
+        "min": 14.192079000000003,
+        "median": 14.437315000000002,
+        "p90": 14.670919000000001,
+        "max": 14.931016
+      },
+      "firstCallMs": {
+        "min": 1.084071999999999,
+        "median": 1.109523000000003,
+        "p90": 1.115992999999996,
+        "max": 1.1837439999999972
+      },
+      "totalMs": {
+        "min": 15.367614,
+        "median": 15.536587,
+        "p90": 15.754991,
+        "max": 16.040539000000003
+      },
+      "heapUsedDelta": {
+        "min": 354408,
+        "median": 354696,
+        "p90": 811384,
+        "max": 811640
+      },
+      "arrayBuffersDelta": {
+        "min": 1199394,
+        "median": 1199394,
+        "p90": 1199394,
+        "max": 1199394
+      },
+      "rssDelta": {
+        "min": 7020544,
+        "median": 7278592,
+        "p90": 7282688,
+        "max": 7409664
+      }
+    },
+    "samples": [
+      {
+        "importMs": 14.268341000000003,
+        "firstCallMs": 1.0992729999999966,
+        "totalMs": 15.367614,
+        "heapUsedDelta": 354696,
+        "arrayBuffersDelta": 1199394,
+        "rssDelta": 7282688,
+        "first": 3
+      },
+      {
+        "importMs": 14.423094000000003,
+        "firstCallMs": 1.1134929999999983,
+        "totalMs": 15.536587,
+        "heapUsedDelta": 811640,
+        "arrayBuffersDelta": 1199394,
+        "rssDelta": 7020544,
+        "first": 3
+      },
+      {
+        "importMs": 14.670919000000001,
+        "firstCallMs": 1.084071999999999,
+        "totalMs": 15.754991,
+        "heapUsedDelta": 354696,
+        "arrayBuffersDelta": 1199394,
+        "rssDelta": 7086080,
+        "first": 3
+      },
+      {
+        "importMs": 14.931016,
+        "firstCallMs": 1.109523000000003,
+        "totalMs": 16.040539000000003,
+        "heapUsedDelta": 354696,
+        "arrayBuffersDelta": 1199394,
+        "rssDelta": 7278592,
+        "first": 3
+      },
+      {
+        "importMs": 14.589958000000003,
+        "firstCallMs": 1.115992999999996,
+        "totalMs": 15.705950999999999,
+        "heapUsedDelta": 354408,
+        "arrayBuffersDelta": 1199394,
+        "rssDelta": 7409664,
+        "first": 3
+      },
+      {
+        "importMs": 14.437315000000002,
+        "firstCallMs": 1.0908519999999982,
+        "totalMs": 15.528167,
+        "heapUsedDelta": 811384,
+        "arrayBuffersDelta": 1199394,
+        "rssDelta": 7028736,
+        "first": 3
+      },
+      {
+        "importMs": 14.192079000000003,
+        "firstCallMs": 1.1837439999999972,
+        "totalMs": 15.375823,
+        "heapUsedDelta": 354416,
+        "arrayBuffersDelta": 1199394,
+        "rssDelta": 7278592,
+        "first": 3
+      }
+    ]
+  },
+  "artifacts": {
+    "dataBytes": 1199390,
+    "loadedDataBytes": 1199390,
+    "loadedDataSha256": "2c37fc136dbff3434384cf0bff26354a65242e493348e5803fcd905bdb9bcea5",
+    "dataSha256": "2c37fc136dbff3434384cf0bff26354a65242e493348e5803fcd905bdb9bcea5",
+    "distBytes": 116772
+  },
+  "memory": {
+    "gcAvailable": true,
+    "before": {
+      "rss": 73605120,
+      "heapTotal": 9236480,
+      "heapUsed": 6156712,
+      "external": 3386783,
+      "arrayBuffers": 1216017
+    },
+    "afterLoop": {
+      "rss": 73605120,
+      "heapTotal": 9236480,
+      "heapUsed": 6183952,
+      "external": 3385791,
+      "arrayBuffers": 1216017
+    },
+    "afterGc": {
+      "rss": 72732672,
+      "heapTotal": 8187904,
+      "heapUsed": 6175704,
+      "external": 3385791,
+      "arrayBuffers": 1216017
+    },
+    "note": "Process snapshots and retained heap deltas are noisy; these do not establish zero per-call allocation."
+  }
+}

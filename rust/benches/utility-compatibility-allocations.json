@@ -1,0 +1,6 @@
+{"method":"Separate process counting successful System allocator calls and requested sizes; fixture construction, stdout initialization and 5000 warmup calls per workload excluded. Live and peak bytes count allocator-requested bytes, not RSS or allocator bookkeeping.","workloads":{
+"known":{"calls":20000,"allocations":0,"reallocations":0,"deallocations":0,"requestedBytes":0,"retainedBytesDelta":0,"peakLiveBytesAboveBaseline":0},
+"unknown":{"calls":20000,"allocations":0,"reallocations":0,"deallocations":0,"requestedBytes":0,"retainedBytesDelta":0,"peakLiveBytesAboveBaseline":0},
+"compound":{"calls":20000,"allocations":0,"reallocations":0,"deallocations":0,"requestedBytes":0,"retainedBytesDelta":0,"peakLiveBytesAboveBaseline":0},
+"long":{"calls":20000,"allocations":0,"reallocations":0,"deallocations":0,"requestedBytes":0,"retainedBytesDelta":0,"peakLiveBytesAboveBaseline":0},
+"utility_compatibility":{"calls":20000,"allocations":0,"reallocations":0,"deallocations":0,"requestedBytes":0,"retainedBytesDelta":0,"peakLiveBytesAboveBaseline":0}},"checksum":615821086}

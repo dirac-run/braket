@@ -1,0 +1,234 @@
+{
+  "endpoint": ".build/src/index.js (compiled public source entry point)",
+  "node": "v24.11.0",
+  "platform": "linux",
+  "architecture": "x64",
+  "date": "2026-11-13T14:11:34.168Z",
+  "samples": 7,
+  "checksum": 2124368873,
+  "correctness": {
+    "total": 76,
+    "passed": 76,
+    "mismatches": [],
+    "grammarProbes": [
+      {
+        "source": "curl --output=result https://example.invalid",
+        "expected": 50331663,
+        "basis": "long equals syntax not documented by frozen curl version; non-normative probe",
+        "actual": -1
+      }
+    ]
+  },
+  "steadyState": {
+    "single": {
+      "inputs": 50,
+      "knownDecisionInputs": 34,
+      "positiveDecisionInputs": 32,
+      "zeroEffectInputs": 2,
+      "unknownDecisionInputs": 16,
+      "averageInputCharacters": 16.76,
+      "iterationsPerSample": 20000,
+      "nsPerCall": {
+        "min": 1883.7316999999985,
+        "median": 1935.9158000000007,
+        "p90": 1953.2431000000004,
+        "max": 2214.8334499999996
+      },
+      "samplesNsPerCall": [
+        2214.8334499999996,
+        1952.7610499999996,
+        1953.2431000000004,
+        1935.9158000000007,
+        1883.7316999999985,
+        1935.4217500000004,
+        1907.5401
+      ]
+    },
+    "compound": {
+      "inputs": 4,
+      "knownDecisionInputs": 4,
+      "positiveDecisionInputs": 4,
+      "zeroEffectInputs": 0,
+      "unknownDecisionInputs": 0,
+      "averageInputCharacters": 114.5,
+      "iterationsPerSample": 20000,
+      "nsPerCall": {
+        "min": 11540.585449999993,
+        "median": 11658.521399999996,
+        "p90": 11744.499699999997,
+        "max": 11797.26425
+      },
+      "samplesNsPerCall": [
+        11744.499699999997,
+        11797.26425,
+        11740.970050000005,
+        11658.521399999996,
+        11615.750000000004,
+        11580.93530000001,
+        11540.585449999993
+      ]
+    },
+    "long": {
+      "inputs": 4,
+      "knownDecisionInputs": 3,
+      "positiveDecisionInputs": 1,
+      "zeroEffectInputs": 2,
+      "unknownDecisionInputs": 1,
+      "averageInputCharacters": 17926.5,
+      "iterationsPerSample": 20000,
+      "nsPerCall": {
+        "min": 125987.3885,
+        "median": 126080.37345000003,
+        "p90": 126777.72719999994,
+        "max": 126805.07525000002
+      },
+      "samplesNsPerCall": [
+        125987.3885,
+        126042.0986,
+        126074.18829999998,
+        126805.07525000002,
+        126080.37345000003,
+        126376.9974500001,
+        126777.72719999994
+      ]
+    }
+  },
+  "coldLoad": {
+    "method": "Fresh Node child, explicit GC before import and after first call. Timing excludes process spawn; module import and data initialization are included.",
+    "summary": {
+      "importMs": {
+        "min": 14.562947999999999,
+        "median": 14.639510999999999,
+        "p90": 14.675690999999997,
+        "max": 14.967077999999997
+      },
+      "firstCallMs": {
+        "min": 1.1041020000000046,
+        "median": 1.1169140000000013,
+        "p90": 1.1325230000000062,
+        "max": 1.1416930000000036
+      },
+      "totalMs": {
+        "min": 15.679862,
+        "median": 15.759983000000002,
+        "p90": 15.805173999999997,
+        "max": 16.099601000000003
+      },
+      "heapUsedDelta": {
+        "min": 364864,
+        "median": 821808,
+        "p90": 822064,
+        "max": 822064
+      },
+      "arrayBuffersDelta": {
+        "min": 1207586,
+        "median": 1207586,
+        "p90": 1207586,
+        "max": 1207586
+      },
+      "rssDelta": {
+        "min": 6512640,
+        "median": 7020544,
+        "p90": 7151616,
+        "max": 7274496
+      }
+    },
+    "samples": [
+      {
+        "importMs": 14.967077999999997,
+        "firstCallMs": 1.1325230000000062,
+        "totalMs": 16.099601000000003,
+        "heapUsedDelta": 364864,
+        "arrayBuffersDelta": 1207586,
+        "rssDelta": 7151616,
+        "first": 3
+      },
+      {
+        "importMs": 14.639510999999999,
+        "firstCallMs": 1.1416930000000036,
+        "totalMs": 15.781204000000002,
+        "heapUsedDelta": 822064,
+        "arrayBuffersDelta": 1207586,
+        "rssDelta": 7139328,
+        "first": 3
+      },
+      {
+        "importMs": 14.638241000000004,
+        "firstCallMs": 1.1135929999999945,
+        "totalMs": 15.751833999999999,
+        "heapUsedDelta": 821808,
+        "arrayBuffersDelta": 1207586,
+        "rssDelta": 6885376,
+        "first": 3
+      },
+      {
+        "importMs": 14.655880999999997,
+        "firstCallMs": 1.1041020000000046,
+        "totalMs": 15.759983000000002,
+        "heapUsedDelta": 364864,
+        "arrayBuffersDelta": 1207586,
+        "rssDelta": 6586368,
+        "first": 3
+      },
+      {
+        "importMs": 14.573559,
+        "firstCallMs": 1.1155230000000032,
+        "totalMs": 15.689082000000003,
+        "heapUsedDelta": 364864,
+        "arrayBuffersDelta": 1207586,
+        "rssDelta": 6512640,
+        "first": 3
+      },
+      {
+        "importMs": 14.675690999999997,
+        "firstCallMs": 1.1294830000000005,
+        "totalMs": 15.805173999999997,
+        "heapUsedDelta": 822064,
+        "arrayBuffersDelta": 1207586,
+        "rssDelta": 7274496,
+        "first": 3
+      },
+      {
+        "importMs": 14.562947999999999,
+        "firstCallMs": 1.1169140000000013,
+        "totalMs": 15.679862,
+        "heapUsedDelta": 822064,
+        "arrayBuffersDelta": 1207586,
+        "rssDelta": 7020544,
+        "first": 3
+      }
+    ]
+  },
+  "artifacts": {
+    "dataBytes": 1199390,
+    "loadedDataBytes": 1199390,
+    "loadedDataSha256": "2c37fc136dbff3434384cf0bff26354a65242e493348e5803fcd905bdb9bcea5",
+    "dataSha256": "2c37fc136dbff3434384cf0bff26354a65242e493348e5803fcd905bdb9bcea5",
+    "distBytes": 119946
+  },
+  "memory": {
+    "gcAvailable": false,
+    "before": {
+      "rss": 73482240,
+      "heapTotal": 12382208,
+      "heapUsed": 7686640,
+      "external": 3395158,
+      "arrayBuffers": 1225445
+    },
+    "afterLoop": {
+      "rss": 73928704,
+      "heapTotal": 12644352,
+      "heapUsed": 8046288,
+      "external": 3395198,
+      "arrayBuffers": 1225445
+    },
+    "afterGc": {
+      "rss": 73928704,
+      "heapTotal": 12644352,
+      "heapUsed": 8046512,
+      "external": 3395198,
+      "arrayBuffers": 1225445
+    },
+    "note": "Process snapshots and retained heap deltas are noisy; these do not establish zero per-call allocation."
+  }
+}

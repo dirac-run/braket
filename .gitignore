@@ -1,0 +1,7 @@
+**/node_modules/
+**/dist/
+**/.build/
+**/target/
+*.tgz
+.DS_Store
+/ascratch/

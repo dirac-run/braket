@@ -1,0 +1,247 @@
+{
+  "implementation": "typescript",
+  "date": "2026-11-12T18:24:24.831792+00:00",
+  "dataSha256": "97e0acbccfcf1400ce77e8755c24f2dad48c6a7abd2f981b12b91ef48a4df8ae",
+  "dataBytes": 1198040,
+  "dataGrowthBytes": 506,
+  "method": "Same-host before/after public endpoint measurements, seven samples of 20,000 calls per workload. Existing frozen workloads; includes normal host noise, not a universal performance guarantee. Timing excludes startup.",
+  "before": {
+    "endpoint": "TypeScript .build/src/index.js public classify",
+    "node": "v24.11.0",
+    "samples": 7,
+    "iterationsPerSample": 20000,
+    "steadyState": {
+      "known": {
+        "inputs": 50,
+        "knownDecisionInputs": 50,
+        "positiveDecisionInputs": 42,
+        "zeroEffectInputs": 8,
+        "unknownDecisionInputs": 0,
+        "averageInputCharacters": 17.02,
+        "iterationsPerSample": 20000,
+        "nsPerCall": {
+          "min": 1693.3954,
+          "median": 1730.930699999999,
+          "p90": 1786.9948499999994,
+          "max": 2063.5721999999996
+        },
+        "samplesNsPerCall": [
+          2063.5721999999996,
+          1786.9948499999994,
+          1718.15055,
+          1765.810900000001,
+          1693.3954,
+          1730.930699999999,
+          1717.3059999999994
+        ]
+      },
+      "unknown": {
+        "inputs": 26,
+        "knownDecisionInputs": 0,
+        "positiveDecisionInputs": 0,
+        "zeroEffectInputs": 0,
+        "unknownDecisionInputs": 26,
+        "averageInputCharacters": 15.73076923076923,
+        "iterationsPerSample": 20000,
+        "nsPerCall": {
+          "min": 1487.666200000001,
+          "median": 1588.63475,
+          "p90": 1720.4205,
+          "max": 1873.3516500000007
+        },
+        "samplesNsPerCall": [
+          1720.4205,
+          1610.5512000000003,
+          1873.3516500000007,
+          1588.63475,
+          1540.5112000000001,
+          1491.5306999999984,
+          1487.666200000001
+        ]
+      },
+      "compound": {
+        "inputs": 4,
+        "knownDecisionInputs": 4,
+        "positiveDecisionInputs": 4,
+        "zeroEffectInputs": 0,
+        "unknownDecisionInputs": 0,
+        "averageInputCharacters": 114.5,
+        "iterationsPerSample": 20000,
+        "nsPerCall": {
+          "min": 11722.896849999996,
+          "median": 11779.813549999993,
+          "p90": 11861.947250000003,
+          "max": 11945.502949999996
+        },
+        "samplesNsPerCall": [
+          11945.502949999996,
+          11861.947250000003,
+          11851.422549999996,
+          11779.813549999993,
+          11768.738300000008,
+          11775.081999999997,
+          11722.896849999996
+        ]
+      },
+      "long": {
+        "inputs": 4,
+        "knownDecisionInputs": 3,
+        "positiveDecisionInputs": 1,
+        "zeroEffectInputs": 2,
+        "unknownDecisionInputs": 1,
+        "averageInputCharacters": 17926.5,
+        "iterationsPerSample": 20000,
+        "nsPerCall": {
+          "min": 135643.89585,
+          "median": 136307.06335,
+          "p90": 136697.5603500001,
+          "max": 136911.00685000003
+        },
+        "samplesNsPerCall": [
+          136057.49405000004,
+          136307.06335,
+          136123.71000000002,
+          136911.00685000003,
+          135643.89585,
+          136618.57034999994,
+          136697.5603500001
+        ]
+      }
+    },
+    "checksum": -1728219644
+  },
+  "after": {
+    "endpoint": "TypeScript .build/src/index.js public classify",
+    "node": "v24.11.0",
+    "samples": 7,
+    "iterationsPerSample": 20000,
+    "steadyState": {
+      "known": {
+        "inputs": 50,
+        "knownDecisionInputs": 50,
+        "positiveDecisionInputs": 42,
+        "zeroEffectInputs": 8,
+        "unknownDecisionInputs": 0,
+        "averageInputCharacters": 17.02,
+        "iterationsPerSample": 20000,
+        "nsPerCall": {
+          "min": 1650.6833,
+          "median": 1720.1372500000004,
+          "p90": 1760.7681500000003,
+          "max": 2037.4423499999996
+        },
+        "samplesNsPerCall": [
+          2037.4423499999996,
+          1760.7681500000003,
+          1672.953299999999,
+          1746.6412500000004,
+          1658.1924999999999,
+          1720.1372500000004,
+          1650.6833
+        ]
+      },
+      "unknown": {
+        "inputs": 26,
+        "knownDecisionInputs": 0,
+        "positiveDecisionInputs": 0,
+        "zeroEffectInputs": 0,
+        "unknownDecisionInputs": 26,
+        "averageInputCharacters": 15.73076923076923,
+        "iterationsPerSample": 20000,
+        "nsPerCall": {
+          "min": 1489.1245,
+          "median": 1507.8847499999995,
+          "p90": 1562.6270000000006,
+          "max": 1689.2715500000008
+        },
+        "samplesNsPerCall": [
+          1689.2715500000008,
+          1562.6270000000006,
+          1507.7383499999996,
+          1518.4356000000007,
+          1507.8847499999995,
+          1490.4764999999998,
+          1489.1245
+        ]
+      },
+      "compound": {
+        "inputs": 4,
+        "knownDecisionInputs": 4,
+        "positiveDecisionInputs": 4,
+        "zeroEffectInputs": 0,
+        "unknownDecisionInputs": 0,
+        "averageInputCharacters": 114.5,
+        "iterationsPerSample": 20000,
+        "nsPerCall": {
+          "min": 11714.744999999994,
+          "median": 11728.47425,
+          "p90": 11736.538999999993,
+          "max": 11824.174750000004
+        },
+        "samplesNsPerCall": [
+          11824.174750000004,
+          11731.9094,
+          11728.47425,
+          11718.41015,
+          11727.997700000004,
+          11736.538999999993,
+          11714.744999999994
+        ]
+      },
+      "long": {
+        "inputs": 4,
+        "knownDecisionInputs": 3,
+        "positiveDecisionInputs": 1,
+        "zeroEffectInputs": 2,
+        "unknownDecisionInputs": 1,
+        "averageInputCharacters": 17926.5,
+        "iterationsPerSample": 20000,
+        "nsPerCall": {
+          "min": 135108.35025000005,
+          "median": 135825.54470000014,
+          "p90": 136291.89374999996,
+          "max": 136488.30155000015
+        },
+        "samplesNsPerCall": [
+          135507.6477,
+          135868.81284999996,
+          135383.2093,
+          136291.89374999996,
+          135108.35025000005,
+          135825.54470000014,
+          136488.30155000015
+        ]
+      }
+    },
+    "checksum": -1728219644
+  },
+  "medianChangePercent": {
+    "known": -0.624,
+    "unknown": -5.083,
+    "compound": -0.436,
+    "long": -0.353
+  },
+  "validation": {
+    "typescriptTests": 201,
+    "rustUnitTests": 14,
+    "rustParityAndStateTests": 6,
+    "rustIndependentSemanticTests": 4,
+    "rustDebugAndReleasePassed": true,
+    "parityInputs": 36715,
+    "parityMismatches": 0,
+    "reportedExamples": 16,
+    "correctedKnownExamples": 13,
+    "explicitUnknownExamples": 3,
+    "deterministicDataRebuildPassed": true,
+    "idempotentFixtureGenerationPassed": true,
+    "standalonePackageSmokePassed": true,
+    "independentBlackBoxReview": {
+      "inputs": 218,
+      "known": 101,
+      "unknown": 117,
+      "typescriptRustDifferences": 0,
+      "confirmedHighValueUnderclassifications": 0,
+      "scope": "Two independent reviewers using public endpoints only; unknown results are support boundaries, not proof of correctness. No payload commands executed."
+    }
+  }
+}

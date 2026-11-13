@@ -1,0 +1,28 @@
+{
+  "format": "expected_i32<TAB>UTF8_hex_command",
+  "reference": "TypeScript .build/src/index.js public classify; frozen regression oracle, not a proof of shell semantics",
+  "dataFormat": "UCAP0009",
+  "dataSha256": "2c37fc136dbff3434384cf0bff26354a65242e493348e5803fcd905bdb9bcea5",
+  "benchmark": 76,
+  "regression": 1697,
+  "runtimeTestFiles": 21,
+  "runtimeCallsUnique": 1773,
+  "canonical": 8194,
+  "variation": 26748,
+  "canonicalPaths": 8194,
+  "total": 36953,
+  "executionPolicy": {
+    "entries": 1350,
+    "roots": 60,
+    "paths": 219,
+    "refreshedExistingFixtures": 678
+  },
+  "utilityCompatibility": {
+    "reportExamples": 58,
+    "independentFixtures": 238,
+    "utilityOptionSpellings": 553,
+    "gitScopes": 6,
+    "refreshedExistingFixtures": 3
+  },
+  "utility": 238
+}

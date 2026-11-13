@@ -1,0 +1,63 @@
+{
+  "name": "braket-cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "braket": "dist/cli.js"
+  },
+  "files": [
+    "dist/index.js",
+    "dist/readable.js",
+    "dist/readable.d.ts",
+    "dist/cli.js",
+    "dist/command.js",
+    "dist/argument-profile.js",
+    "dist/data-format.js",
+    "dist/data-loader.js",
+    "dist/lookup.js",
+    "dist/shell.js",
+    "dist/word-facts.js",
+    "dist/word.js",
+    "dist/index.d.ts",
+    "dist/decision.d.ts",
+    "data/classifier.bin",
+    "README.md",
+    "LICENSE.unbash",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "build:tooling": "tsc -p tsconfig.tooling.json",
+    "build": "npm run build:tooling && npm run stage:data && tsc -p tsconfig.build.json",
+    "data:rebuild": "npm run build:tooling && node .build/build/compile.js",
+    "test": "npm run build && node --test .build/test/*.test.js",
+    "test:integration": "npm run build && node --test .build/test/*.integration.js",
+    "benchmark": "npm run build && node .build/bench/benchmark.js",
+    "prepack": "npm run build",
+    "pack": "npm pack",
+    "package:smoke": "node scripts/package-smoke.mjs",
+    "stage:data": "node scripts/stage-data.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "24.13.4",
+    "typescript": "5.9.3"
+  },
+  "description": "Classify shell command effects in microseconds.",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dirac-run/braket.git",
+    "directory": "typescript"
+  }
+}

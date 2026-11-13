@@ -1,0 +1,34 @@
+[package]
+name = "braket"
+version = "0.1.0"
+edition = "2024"
+description = "Classify shell command effects in microseconds."
+license = "Apache-2.0"
+repository = "https://github.com/dirac-run/braket"
+publish = false
+include = ["src/**", "data/**", "README.md", "LICENSE", "NOTICE", "LICENSE.unbash", "Cargo.toml", "Cargo.lock", "tests/**", "benches/**", "tools/**"]
+
+[lib]
+name = "braket"
+path = "src/lib.rs"
+
+[[bench]]
+name = "throughput"
+path = "benches/throughput.rs"
+harness = false
+
+[[bin]]
+name = "braket"
+path = "src/bin/braket.rs"
+
+[[bin]]
+name = "classify-batch"
+path = "tools/classify_batch.rs"
+
+[[bin]]
+name = "allocation-probe"
+path = "tools/allocation_probe.rs"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
