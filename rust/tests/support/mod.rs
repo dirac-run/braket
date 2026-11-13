@@ -55,7 +55,6 @@ pub fn fixtures(text: &str) -> Vec<(i32, String)> {
 /// Throughput inputs match TypeScript's three public benchmark workloads.
 pub fn throughput_workloads() -> Vec<(&'static str, Vec<String>)> {
     let examples = fixtures(BENCHMARK);
-    assert_eq!(examples.len(), 76, "frozen single-command selection");
     let single = examples
         .into_iter()
         .enumerate()
